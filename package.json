@@ -1,0 +1,52 @@
+{
+	"name": "svelte-payload-frontend",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@payloadcms/db-postgres": "beta",
+		"@payloadcms/next": "beta",
+		"@payloadcms/plugin-cloud": "beta",
+		"@payloadcms/richtext-lexical": "beta",
+		"@swc/core": "^1.5.7",
+		"cross-env": "^7.0.3",
+		"graphql": "^16.8.1",
+		"next": "14.3.0-canary.28",
+		"payload": "beta",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sharp": "0.32.6"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/eslint": "^8.56.0",
+		"@typescript-eslint/eslint-plugin": "^7.0.0",
+		"@typescript-eslint/parser": "^7.0.0",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.35.1",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"svelte": "^4.2.7",
+		"svelte-check": "^3.6.0",
+		"tslib": "^2.4.1",
+		"vite": "^5.0.3",
+		"@types/node": "^20.11.25",
+		"@types/react": "^18.2.64",
+		"@types/react-dom": "^18.2.21",
+		"dotenv": "^16.4.5",
+		"tsx": "^4.7.1",
+		"typescript": "^5.4.2"
+	},
+	"type": "module"
+}
